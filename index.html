@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+	<head>
+		<!-- ==============================================
+		Títulos e Metas Tag
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>D3 Development, Designer, Dreams | Igor Luciano</title>
+		<meta name="description" content="Desenvolvimento de sites, sistemas web, aplicativos mobile e soluções de dados com HTML, CSS, PHP, C#, SQL, Python e Databricks." />
+		<meta name="keywords" content="desenvolvedor web, desenvolvimento de sistemas, criação de sites, aplicativos mobile, engenharia de dados, python, databricks, sql, php, csharp, front end, back end" />
+		<meta name="author" content="Igor Luciano" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="pt_BR" />
+		<meta property="og:title" content="D3 Development, Designer, Dreams | Igor Luciano" />
+		<meta property="og:description" content="Sites, sistemas web, aplicativos mobile e soluções de dados para transformar ideias em produtos digitais." />
+		<meta property="og:image" content="https://igorluciano.com.br/images/igor_luciano_ilustra.png" />
+		<meta property="og:url" content="https://igorluciano.com.br" />
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="D3 Development, Designer, Dreams | Igor Luciano" />
+		<meta name="twitter:description" content="Desenvolvimento web, mobile e dados com foco em soluções claras, modernas e funcionais." />
+		<meta name="twitter:image" content="https://igorluciano.com.br/images/igor_luciano_ilustra.png" />
+		<link rel="canonical" href="https://igorluciano.com.br" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+    <link rel="icon" href="images/favicon16x16.png" sizes="16x16">
+    <link rel="icon" href="images/favicon32x32.png" sizes="32x32">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+		<!-- ==============================================
+		CSS
+		=============================================== -->    
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link id="main" rel="stylesheet" href="css/styles-1.css">
+		<link id="theme" rel="stylesheet" href="css/styles-1.css">
+		<link rel="stylesheet" href="css/style-switcher.css">
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200,600,700" rel="stylesheet" type="text/css">
+
+		<!--[if lt IE 9]>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript" src="js/modernizr.min.js"></script>
+	</head>
+	
+	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+	
+		<!--=== PAGE PRELOADER ===-->
+		<div id="page-loader"><span class="page-loader-gif"></span></div>
+		
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<div id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand scrollto" href="#home">D<sup>3</sup></a>
+				</div>
+				<div id="site-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#services" class="scrollto"><i class="fa fa-cog"></i>Especialidades</a>
+						</li>
+						<li>
+							<a href="#projetos" class="scrollto"><i class="fa fa-briefcase"></i>Portfolio</a>
+						</li>						
+						<li>
+							<a href="#about" class="scrollto"><i class="fa fa-graduation-cap"></i>Perfil</a>
+						</li>
+						<li>
+							<a href="#contact" class="scrollto"><i class="fa fa-envelope"></i>Contato</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ==============================================
+		HEADER
+		=============================================== -->
+		<header id="home">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-10 col-sm-offset-1 text-center">
+							<h1 class="scrollimation fade-down d1"><span class="main-color">D<sup>3</sup></span> Sistemas Web, Apps e Dados</h1>
+						<h2 class="scrollimation fade-down d3"><span class="main-color">D</span>evelopment, <span class="main-color">D</span>esigner, <span class="main-color">D</span>reams</h2>
+					</div>
+				</div>
+					<div class="header-img scrollimation fade-up d1">
+						<img class="img-responsive" src="images/igor_luciano_ilustra.png" alt="Ilustração de Igor Luciano para a D3 Development, Designer, Dreams." />
+					</div>
+			</div>
+		</header>
+
+		<div id="main-content">
+			<div class="scroll-down">
+				<a href="#services" class="scrollto">Saiba Mais</a>
+			</div>
+			
+			<!-- ==============================================
+			Serviços
+			=============================================== -->
+			<section id="services" class="big-padding">
+				<div class="container">
+					<h1 class="section-title">Especialidades<span class="main-color"></span></h1>
+					<div class="text-center">
+							<div class="btn-group">
+								<button type="button" href="#front-end" class="btn btn-default toggle-tabs active">Front End</button>
+								<button type="button" href="#back-end" class="btn btn-default toggle-tabs">Back End</button>
+								<button type="button" href="#mobile-data" class="btn btn-default toggle-tabs">Mobile & Dados</button>
+							</div>
+						</div>
+						<div class="tab-content">
+							<div class="row tab-pane active" id="front-end">
+								<div class="col-sm-4 service-item scrollimation fade-left">
+									<div class="service-icon "><i class="fa fa-html5"></i></div>
+									<h3>HTML5</h3>
+									<p>Estrutura semântica, acessível e bem organizada para páginas mais claras, leves e fáceis de manter.</p>
+								</div>
+								<div class="col-sm-4 service-item scrollimation fade-left">
+									<div class="service-icon "><i class="fa fa-css3"></i></div>
+									<h3>CSS3</h3>
+									<p>Interfaces responsivas, bem acabadas e consistentes, com foco em usabilidade e performance visual.</p>
+								</div>
+								<div class="col-sm-4 service-item scrollimation fade-left">
+									<div class="service-icon "><i class="fa fa-mobile"></i></div>
+									<h3>Design Responsivo</h3>
+									<p>Layouts adaptados para desktop, tablet e celular, preservando leitura, navegação e experiência em qualquer tela.</p>
+								</div>
+							</div>
+							<div class="row tab-pane" id="back-end">
+								<div class="col-sm-4 service-item">
+									<div class="service-icon"><i class="fa fa-windows"></i></div>
+									<h3>ASP/C#</h3>
+									<p>Desenvolvimento de sistemas web, APIs e integrações com a plataforma Microsoft e banco de dados SQL Server.</p>
+								</div>
+								<div class="col-sm-4 service-item">
+									<div class="service-icon"><i class="fa fa-code"></i></div>
+									<h3>PHP</h3>
+									<p>Aplicações web dinâmicas, áreas administrativas, formulários e integrações para sites e sistemas sob medida.</p>
+								</div>
+								<div class="col-sm-4 service-item">
+									<div class="service-icon"><i class="fa fa-database"></i></div>
+									<h3>SQL</h3>
+									<p>Modelagem, consultas, procedures, views e rotinas para SQL Server e MySQL com foco em dados confiáveis.</p>
+								</div>
+							</div>
+							<div class="row tab-pane" id="mobile-data">
+								<div class="col-sm-4 service-item">
+									<div class="service-icon"><i class="fa fa-android"></i></div>
+									<h3>Android</h3>
+									<p>Desenvolvimento de aplicativos Android com foco em experiência do usuário, integrações e publicação na loja.</p>
+								</div>
+								<div class="col-sm-4 service-item">
+									<div class="service-icon"><i class="fa fa-apple"></i></div>
+									<h3>iOS</h3>
+									<p>Criação de aplicativos para iPhone e iPad, com interfaces cuidadosas e integração com serviços e APIs.</p>
+								</div>
+								<div class="col-sm-4 service-item">
+									<div class="service-icon"><i class="fa fa-sitemap"></i></div>
+									<h3>Engenharia de Dados</h3>
+									<p>Construção de pipelines, tratamento, organização e disponibilização de dados para análise e tomada de decisão.</p>
+								</div>
+								<div class="col-sm-4 service-item">
+									<div class="service-icon"><i class="fa fa-code"></i></div>
+									<h3>Python</h3>
+									<p>Automação, processamento de dados, integrações e scripts para resolver tarefas repetitivas com eficiência.</p>
+								</div>
+								<div class="col-sm-4 service-item">
+									<div class="service-icon"><i class="fa fa-cloud"></i></div>
+									<h3>Databricks</h3>
+									<p>Criação e manutenção de fluxos de dados em Databricks, notebooks, jobs e processamento distribuído.</p>
+								</div>
+							</div>
+						</div>
+				</div>
+			</section>
+				
+			<!-- ==============================================
+			Últimos Projetos
+			=============================================== -->
+			<section id="projetos" class="big-padding gray-bg">
+				<div class="container">
+					<h1 class="section-title">Últimos Projetos<span class="main-color"></span></h1>
+					<div class="row">
+						<div class="col-sm-5 push-down scrollimation fade-right">
+							<h2 class="row-title">DecoraNova</h2>
+							<p>Oferece o que há de mais moderno no mercado, oferecendo todas as novidades em papel de parede, tecidos, mecanismos e acabamentos, tudo isso aliado a mão de obra especializada, que vai desde ao atendimento/orçamento/venda até a entrega/instalação.</p> 
+							<p>Site leve, moderno e bonito. Feito em HTML5, CSS e PHP.</p>
+							<p><a class="btn btn-dc btn-small btn-main-color" href="https://decoranova.com.br/" target="_blank" rel="noopener noreferrer">Visite o Site</a></p>
+						</div>
+						<div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+							<img class="img-responsive" src="images/decoranova_3_imagens_empilhadas_perspectiva.png" alt="Tela do projeto DecoraNova." />
+						</div>
+					</div>
+					<hr>
+						<div class="row">
+							<div class="col-sm-6 col-sm-push-6 push-down scrollimation fade-left">
+								<h2 class="row-title">Loja Pé Que Ri</h2>
+								<p>Site leve, moderno e bonito. Feito em HTML5 e CSS.</p>
+								<p>Descubra as meias mais criativas inspiradas em seus animes, séries e filmes favoritos!</p>
+								<p><a class="btn btn-dc btn-small btn-main-color" href="https://pequeri.store/" target="_blank" rel="noopener noreferrer">Visite o Site</a></p>
+							</div>
+							<div class="col-sm-6 col-sm-pull-6 scrollimation fade-right">
+								<img class="img-responsive" src="images/pe_que_ri_featured_1_perspectiva.png" alt="Tela do projeto Loja Pé Que Ri." />
+							</div>
+						</div>
+						<hr>
+						<div class="row">
+							<div class="col-sm-5 push-down scrollimation fade-right">
+								<h2 class="row-title">Combustível Flex</h2>
+								<p>Aplicativo para Android desenvolvido em Java e para iOS desenvolvido em Swift.</p>
+								<p>Site leve, moderno e bonito. Feito em HTML5 e CSS.</p>
+								<p><a class="btn btn-dc btn-small btn-main-color" href="https://combustivelflex.com.br/" target="_blank" rel="noopener noreferrer">Visite o Site</a></p>
+							</div>
+							<div class="col-sm-6 col-sm-offset-1 scrollimation fade-left">
+								<img class="img-responsive" src="images/cbflex.png" alt="Tela do projeto Combustível Flex." />
+							</div>
+						</div>
+					</div>
+				</section>
+			
+			<!-- ==============================================
+			Frase
+			=============================================== -->
+			<section id="cta1" class="bg-main-color cta">
+				<div class="container text-center scrollimation fade-up">
+					<p><i>"Não se trata de ideias. É sobre fazer ideias acontecer."</i></p>
+					<a class="btn btn-dc btn-white scrollto" href="#contact">Contate-me</a>
+				</div>
+			</section>
+				
+			<!-- ==============================================
+			Sobre
+			=============================================== -->
+			<section id="about" class="big-padding">
+				<div class="container">
+					<h1 class="section-title">Meu Perfil<span class="main-color"></span></h1>
+					<div class="row profile">
+						<div class="col-sm-10 col-sm-offset-1 text-center">
+							<figure class="hover-wrapper scrollimation fade-right">
+								<img class="img-responsive img-circle profile-img" src="images/eu.png" alt="Foto de Igor Luciano">
+								<figcaption class="hover-text">Sobre mim!</figcaption>
+							</figure>
+							<h2 class="scrollimation fade-left">Igor Luciano</h2>
+							<h3 class="scrollimation fade-left">Desenvolvedor Web, Mobile e Dados</h3>
+							<p class="margin-top scrollimation fade-right">Meu nome é Igor, trabalho com desenvolvimento de sistemas web, aplicativos e soluções de dados. Sou formado em Análise e Desenvolvimento de Sistemas, com pós-graduação em Data Science, e tenho paixão pelo que faço; busco sempre novos desafios e gosto de tudo clean, intuitivo e bonito.</p>
+							<p class="lead margin-top scrollimation fade-left">Criar não é apenas um trabalho para mim. É uma paixão. </p>
+							<!--<p class="scrollimation fade-left"><a class="btn btn-dc btn-main-color scrollto" href="#portfolio">Meu Portfolio</a></p>-->
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- ==============================================
+			SKILLS
+			=============================================== -->
+			<section id="skills" class="small-padding dark-bg">
+				<div class="container">
+					<div class="row skills">
+						<div class="col-sm-6 col-md-3 text-center">
+							<span class="chart plus-symbol" data-percent="90"><span class="percent">90</span></span>
+							<h2 class="text-center">Front End</h2>
+						</div>
+						<div class="col-sm-6 col-md-3 text-center">
+							<span class="chart plus-symbol" data-percent="80"><span class="percent">80</span></span>
+							<h2 class="text-center">Back End</h2>
+						</div>
+						<div class="col-sm-6 col-md-3 text-center">
+							<span class="chart equal-symbol" data-percent="95"><span class="percent">95</span></span>
+							<h2 class="text-center">Suporte</h2>
+						</div>
+						<div class="col-sm-6 col-md-3 text-center">
+							<span class="chart" data-percent="90"><span class="percent">90</span></span>
+							<h2 class="text-center main-color">Pontos Total</h2>
+						</div>
+					</div>
+				</div>
+			</section>
+				
+			<!-- ==============================================
+			PORTFOLIO
+			=============================================== -->
+			<section id="portfolio" class="big-padding" >
+				<div class="container">
+					<p class="lead text-center">Gostou do que viu? Contate-me para conversarmos sobre o seu projeto!</p>
+					<p class="text-center"><a class="btn btn-dc btn-main-color scrollto" href="#contact">Contate-me</a></p>
+				</div>
+			</section>
+			
+			<!-- ==============================================
+			TWITTER
+			=============================================== -->
+			<section id="twitter-feeds" class="bg-main-color">
+				<div class="container text-center scrollimation fade-right">
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1">
+							<h1>Últimos tweets</h1>
+							<p><i class="fa fa-twitter"></i></p>
+							<div id="twitter-slider" class="flexslider" data-widget-id="581305793645015040" data-max-tweets="5"></div>
+							<p><a href="https://twitter.com/igorlucianocp" data-toggle="tooltip" data-placement="bottom" title="Siga-me no Twitter" target="_blank" rel="noopener noreferrer">@igorlucianocp</a></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			
+			<!-- ==============================================
+			CONTACT
+			=============================================== -->
+			<section id="contact" class="big-padding light-typo color-overlay">
+				<div class="container">
+					<h1 class="section-title">Contatos<span class="main-color"></span></h1>
+					<div class="row">
+						<div class="col-sm-6 col-md-5 scrollimation fade-right">
+							<p class="lead">Mal posso esperar para o próximo projeto emocionante! Poderia ser o seu?</p>
+							<p>
+								Igor Luciano<br/>
+								São Paulo SP<br/>
+								(11) 94144 - 4484<br/>
+							</p>
+							<div class="social-links">
+								<a href="https://twitter.com/igorlucianocp" aria-label="Twitter de Igor Luciano"><i class="fa fa-fw fa-twitter"></i></a>
+								<a href="https://www.facebook.com/igorlucianocp?_rdr" aria-label="Facebook de Igor Luciano"><i class="fa fa-fw fa-facebook-square"></i></a>
+								<a href="https://www.linkedin.com/in/igorlcp" aria-label="LinkedIn de Igor Luciano"><i class="fa fa-fw fa-linkedin-square"></i></a>
+							</div>
+							<p><a class="mail-styled" href="mailto:contato@igorluciano.com.br">contato@igorluciano.com.br</a></p>
+						</div>
+					
+						<!--=== Contact Form ===-->
+						<form id="contact-form" class="col-sm-6 col-md-offset-1 scrollimation fade-left" action="email.php" method="post" novalidate>
+							<div class="form-group">
+								<div class="controls">
+									<input id="txtNome" name="nome" class="form-control requiredField" type="text" data-error-empty="é obrigatório">
+									<label class="control-label" for="txtNome">Nome</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="controls">
+									<input id="txtEmail" name="email" class="form-control requiredField" type="email" data-error-empty="é obrigatório" data-error-invalid="é inválido">
+									<label class="control-label" for="txtEmail">Email</label>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="controls">
+									<textarea id="txtMsg" name="mensagem" class="form-control requiredField" rows="6" data-error-empty="é obrigatória"></textarea>
+									<label class="control-label" for="txtMsg">Mensagem</label>
+								</div>
+							</div>
+							<button type="submit" class="btn" data-error-message="Preencha os campos obrigatórios." data-sending-message="Enviando mensagem" data-ok-message="Sua mensagem foi enviada!">Enviar</button>
+							<input type="hidden" name="submitted" id="submitted" value="true" />
+						</form>
+					</div>
+				</div>
+			</section>
+			
+			<!-- ==============================================
+			FOOTER
+			=============================================== -->
+			<footer id="main-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-2">
+							<a class="logo-link scrollto" href="#home">D<sup>3</sup></a>
+						</div>
+						<div class="col-sm-8">
+							<nav>
+								<ul class="footer-nav">
+									<li><a class="scrollto" href="#home">Home</a></li>
+									<li><a class="scrollto" href="#services">Especialidades</a></li>
+									<li><a class="scrollto" href="#projetos">Portfolio</a></li>
+									<li><a class="scrollto" href="#contact">Contato</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="col-sm-2 text-right social-links">
+							<a href="https://twitter.com/igorlucianocp" target="_blank" rel="noopener noreferrer" aria-label="Twitter de Igor Luciano" data-toggle="tooltip" title="Siga-me no Twitter"><i class="fa fa-fw fa-twitter"></i></a>
+							<a href="https://www.facebook.com/igorlucianocp" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Igor Luciano" data-toggle="tooltip" title="Siga-me no Facebook"><i class="fa fa-fw fa-facebook"></i></a>
+							<a href="https://www.linkedin.com/in/igorlcp" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn de Igor Luciano" data-toggle="tooltip" title="Siga-me no LinkedIn"><i class="fa fa-fw fa-linkedin"></i></a>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<div id="project-viewer" class="modal fade">
+						<span id="close-project-viewer" data-dismiss="modal" role="button" tabindex="0" aria-label="Fechar projeto">&times;</span>
+			<div class="container">
+				<div id="project-viewer-content"></div>
+				<div id="project-viewer-footer">
+					<div class="project-nav">
+						<span class="previous-project" data-toggle="tooltip" data-placement="bottom" title="Projeto anterior" role="button" tabindex="0" aria-label="Projeto anterior"><i class="fa fa-long-arrow-left"></i></span>
+						<span class="back-to-portfolio" data-toggle="tooltip" data-placement="bottom" title="Voltar ao Portfolio" data-dismiss="modal" role="button" tabindex="0" aria-label="Voltar ao Portfolio"><i class="fa fa-th-large"></i></span>
+						<span class="next-project" data-toggle="tooltip" data-placement="bottom" title="Próximo projeto" role="button" tabindex="0" aria-label="Próximo projeto"><i class="fa fa-long-arrow-right"></i></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- ==============================================
+		SCRIPTS
+		=============================================== -->	
+		<script src="js/jquery.min.js?v=20260520"></script>
+		<script src="js/bootstrap.min.js?v=20260520"></script>
+		<script src="js/jquery.easing.1.3.min.js?v=20260520"></script>
+		<script src="js/waypoints.min.js?v=20260520-2"></script>
+		<script src="js/jquery.easypiechart.js?v=20260520"></script>
+		<script src="js/jquery.flexslider.min.js?v=20260520"></script>
+		<script src="js/jquery.fitvids.js?v=20260520"></script>
+		<script src="js/contact.js?v=20260520-4"></script>
+		<script src="js/scripts.js?v=20260520-2"></script>
+		<script src="js/style-switcher.js?v=20260520"></script>
+	</body>
+</html>
