@@ -9,6 +9,8 @@ const EMAIL_DESTINATARIO = 'contato@igorluciano.com.br';
 const EMAIL_REMETENTE = 'contato@igorluciano.com.br';
 const NOME_REMETENTE = 'D3 Development, Designer, Dreams';
 
+require_once __DIR__ . '/config.php';
+
 function clean_text($value)
 {
     return trim(strip_tags((string) $value));
@@ -43,6 +45,33 @@ function encode_header_name($name)
 $nome = clean_header_value(post_value(array('nome', 'txtNome', 'name')));
 $email = clean_header_value(post_value(array('email', 'txtEmail')));
 $mensagem = clean_text(post_value(array('mensagem', 'txtMsg', 'message')));
+
+$recaptchaToken = isset($_POST['g-recaptcha-response']) ? trim($_POST['g-recaptcha-response']) : '';
+if ($recaptchaToken === '') {
+    http_response_code(400);
+    echo 'Por favor, confirme que você não é um robô.';
+    exit;
+}
+
+$verifyContext = stream_context_create([
+    'http' => [
+        'method'  => 'POST',
+        'header'  => 'Content-Type: application/x-www-form-urlencoded',
+        'content' => http_build_query([
+            'secret'   => RECAPTCHA_SECRET,
+            'response' => $recaptchaToken,
+            'remoteip' => $_SERVER['REMOTE_ADDR'] ?? '',
+        ]),
+    ],
+]);
+$verifyResult = @file_get_contents('https://www.google.com/recaptcha/api/siteverify', false, $verifyContext);
+$verifyJson   = $verifyResult ? json_decode($verifyResult, true) : null;
+
+if (!$verifyJson || empty($verifyJson['success'])) {
+    http_response_code(400);
+    echo 'Verificação do CAPTCHA falhou. Tente novamente.';
+    exit;
+}
 
 if ($nome === '' || $email === '' || $mensagem === '') {
     http_response_code(400);

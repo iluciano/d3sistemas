@@ -95,6 +95,11 @@ $(document).ready(function() {
 			return;
 		}
 
+		if (typeof grecaptcha === 'undefined' || grecaptcha.getResponse() === '') {
+			showMessage('Por favor, confirme que você não é um robô.');
+			return;
+		}
+
 		if (window.location.protocol === 'file:') {
 			showMessage('Abra o site por um servidor local para testar o envio: php -S 127.0.0.1:8080.');
 			return;
@@ -111,6 +116,9 @@ $(document).ready(function() {
 			showMessage(okMessage);
 			$form[0].reset();
 			setFilledState();
+			if (typeof grecaptcha !== 'undefined') {
+				grecaptcha.reset();
+			}
 		}).fail(function(xhr) {
 			var responseMessage = $.trim(xhr.responseText || '');
 			showMessage(responseMessage || 'Nao foi possivel enviar a mensagem.');
