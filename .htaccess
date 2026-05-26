@@ -1,0 +1,11 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Força HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Remove www
+RewriteCond %{HTTP_HOST} ^www\.igorluciano\.com\.br$ [NC]
+RewriteRule ^ https://igorluciano.com.br%{REQUEST_URI} [L,R=301]

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /googleb599b08ba3174f48.html
+Disallow: /email.php
+Disallow: /config.php
+
+Sitemap: https://igorluciano.com.br/sitemap.xml
